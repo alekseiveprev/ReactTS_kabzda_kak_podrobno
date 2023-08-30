@@ -1,11 +1,19 @@
 import React from 'react';
 import './App.css';
 import Accordion from './components/Accordion/Accordion';
+import OnOff from './components/OnOff/OnOff';
 import { Raiting } from './components/Raiting/Raiting';
 
 function App() {
   return (
     <div>
+
+      <OnOff  />
+      {/* <OnOff on={true} />
+      <OnOff on={false} /> */}
+
+
+
       <PageTitle title={'This is App component'} />
       <PageTitle title={'My friends'} />
       Article 1
