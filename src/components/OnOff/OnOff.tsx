@@ -1,9 +1,16 @@
+import React, { useState } from 'react';
+
 type PropsType = {
   // on: boolean;
 };
 
 function OnOff(props: PropsType) {
-  const on = false;
+  //let on = false;
+  console.log('OnOff rendering');
+
+  let [on, setOn] = useState(false);
+
+  console.log('On:'+on);
 
   const onStyle = {
     width: '30px',
@@ -36,8 +43,22 @@ function OnOff(props: PropsType) {
   };
   return (
     <div>
-      <div style={onStyle}>On </div>
-      <div style={offStyle}>Off </div>
+      <div
+        style={onStyle}
+        onClick={() => {
+          setOn(true);
+        }}
+      >
+        On
+      </div>
+      <div
+        style={offStyle}
+        onClick={() => {
+          setOn(false);
+        }}
+      >
+        Off
+      </div>
       <div style={indicatorStyle}> </div>
     </div>
   );

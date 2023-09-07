@@ -7,7 +7,6 @@ type AccordionPropsType = {
 
 function Accordion(props: AccordionPropsType) {
     console.log("Accordion rendering");
-debugger
     return (
         <div>
             <AccordionTitle title={props.titleValue}/>
