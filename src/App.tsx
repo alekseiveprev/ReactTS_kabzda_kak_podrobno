@@ -4,10 +4,11 @@ import Accordion from './components/Accordion/Accordion';
 import OnOff from './components/OnOff/OnOff';
 import { Raiting } from './components/Raiting/Raiting';
 import UncontrolledAccordion from './components/UncontrolledAccordion/UncontrolledAccordion';
+import { UncontrolledRaiting } from './UncontrolledRating/UncontrolledRating';
 
 function App() {
   return (
-    <div>
+    <div className={'App'}>
       <OnOff />
       {/* <OnOff on={true} />
       <OnOff on={false} /> */}
@@ -20,6 +21,7 @@ function App() {
       <Accordion titleValue={'Menu'} collapsed={true} />
       <Accordion titleValue={'Users'} collapsed={false} />
       Article 2
+      <UncontrolledRaiting />
       <Raiting value={0} />
       <Raiting value={1} />
       <Raiting value={2} />
