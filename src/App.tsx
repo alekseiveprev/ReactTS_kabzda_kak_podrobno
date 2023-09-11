@@ -4,7 +4,7 @@ import Accordion from './components/Accordion/Accordion';
 import OnOff from './components/OnOff/OnOff';
 import { Raiting } from './components/Raiting/Raiting';
 import UncontrolledAccordion from './components/UncontrolledAccordion/UncontrolledAccordion';
-import { UncontrolledRaiting } from './UncontrolledRating/UncontrolledRating';
+import { UncontrolledRaiting } from './components/UncontrolledRating/UncontrolledRating';
 
 function App() {
   return (
